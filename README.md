@@ -1,5 +1,20 @@
 ## E_commerce-Analysis
 
+# Overview
+
+* Your E_Commerce dataset contains the following columns:
+	* user_id, product_id, category, price, discount, final_price, payment_method, purchase
+	* You calculated additional metrics:
+	* sales = final_price - discount
+	* month extracted from purchase
+* The project includes key analytical areas:
+* Revenue analysis (total revenue, revenue by category/payment method)
+* Sales analysis (sales per product, average order per user)
+* Discount impact (average discount, discount buckets, total discount by category)
+* Customer behavior (top users by spending, repeat purchases, monthly spending)
+* Payment method trends (frequency and revenue)
+* Low-margin products/categories (high volume, low price)
+
 ```sql
 CREATE TABLE E_Commerce(
 	user_id Text PRIMARY KEY,
@@ -171,3 +186,34 @@ FROM e_commerce
 GROUP BY category
 ORDER BY sales_volume DESC, avg_final_price ASC;
 ```
+
+# Key Insights
+
+* Revenue & Sales
+	* Total revenue gives an overview of earnings from all purchases.
+	* Certain categories generate the highest revenue, indicating best-selling product lines.
+	* Product-level analysis shows top 10 products by sales, helping identify high-demand items.
+
+* Discount Impact
+	* Average discount per category shows where price incentives are concentrated.
+	* Discount buckets (low, medium, high) indicate how final price reacts to discount levels.
+	* Categories offering maximum total discount could be reducing margins, highlighting areas for pricing optimization.
+
+* Customer Behavior
+	* Top 5 users by total spending reveal high-value customers.
+	* Average spending per user per month highlights loyal or repeat buyers.
+
+* Payment Methods
+	* Most frequently used payment methods show customer preferences.
+	* Revenue per payment method helps in assessing the most profitable payment channels
+	* Low-Margin, High-Volume Products
+	* Categories with high sales volume but low average final_price indicate low-margin items.
+	* These insights help prioritize products for promotion or cost optimization.
+   
+# Conclusions
+
+* The business generates most revenue from specific categories and top-selling products, which should be maintained or promoted further.
+* Discounts play a key role in sales volume; high discounts increase order count but may reduce margins.
+* Identifying top-spending customers enables targeted loyalty programs and marketing campaigns.
+* Payment method analysis can guide partnerships with payment providers or promotional offers.
+* Low-margin, high-volume categories are strategic for volume sales but require careful pricing or cost management.
