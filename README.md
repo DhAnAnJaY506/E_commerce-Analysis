@@ -187,7 +187,7 @@ GROUP BY category
 ORDER BY sales_volume DESC, avg_final_price ASC;
 ```
 
-# Key Insights
+## Key Insights
 
 * Revenue & Sales
 	* Total revenue gives an overview of earnings from all purchases.
@@ -210,7 +210,7 @@ ORDER BY sales_volume DESC, avg_final_price ASC;
 	* Categories with high sales volume but low average final_price indicate low-margin items.
 	* These insights help prioritize products for promotion or cost optimization.
    
-# Conclusions
+## Conclusions
 
 * The business generates most revenue from specific categories and top-selling products, which should be maintained or promoted further.
 * Discounts play a key role in sales volume; high discounts increase order count but may reduce margins.
