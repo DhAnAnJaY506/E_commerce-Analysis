@@ -217,3 +217,8 @@ ORDER BY sales_volume DESC, avg_final_price ASC;
 * Identifying top-spending customers enables targeted loyalty programs and marketing campaigns.
 * Payment method analysis can guide partnerships with payment providers or promotional offers.
 * Low-margin, high-volume categories are strategic for volume sales but require careful pricing or cost management.
+
+## Tech Stack
+Database: PostgreSQL / MySQL
+Language: SQL
+Version Control: Git & GitHub
